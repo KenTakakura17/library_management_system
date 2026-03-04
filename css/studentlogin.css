@@ -1,4 +1,46 @@
-.umdc{
-    margin-top: 150px;
-    margin-left: 170px;
+* {
+    font-family: 'Cinzel', serif;
+    color: rgb(200, 16, 46);
+    
+}
+
+.container {
+    background-image: url(../assets/UMDC.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.umdc {
+    margin: 0px;
+    margin-top: 180px;
+    padding-left: 180px;
+}
+
+.library {
+    padding-left: 380px;
+    margin: 0px;
+}
+
+.Loginmain {
+    font-size: 20px;
+    color: black;
+    text-shadow:
+        -1px -1px 0 white,
+        1px -1px 0 white,
+        -1px 1px 0 white,
+        1px 1px 0 white;
+        margin: 0px;
+}
+
+.LoginFormContainer {
+    margin-top: 1px;
+    margin-left: 930px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 130px;
+    border-radius: 10px;
+    width: 300px;
 }
