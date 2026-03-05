@@ -1,7 +1,8 @@
 * {
     font-family: 'Cinzel', serif;
-    color: rgb(200, 16, 46);
-    
+    overflow-x: hidden;
+    overflow-y: hidden;
+
 }
 
 .container {
@@ -10,19 +11,19 @@
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
-    overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 .umdc {
     margin: 0px;
-    margin-top: 180px;
+    margin-top: 300px;
     padding-left: 180px;
+    color: rgb(200, 16, 46);
 }
 
 .library {
     padding-left: 380px;
     margin: 0px;
+    color: rgb(200, 16, 46);
 }
 
 .Loginmain {
@@ -33,14 +34,53 @@
         1px -1px 0 white,
         -1px 1px 0 white,
         1px 1px 0 white;
-        margin: 0px;
+    margin: 0px;
 }
 
 .LoginFormContainer {
+    position: absolute;
+    top: 30%;
+    left: 55%;
     margin-top: 1px;
-    margin-left: 930px;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 130px;
+    background-color: rgb(255, 255, 255);
+    padding: 100px;
     border-radius: 10px;
     width: 300px;
+}
+
+.Username {
+    padding: 5px;
+    padding-right: 120px;
+    margin: 3px;
+}
+
+.Password {
+    padding: 5px;
+    padding-right: 120px;
+    margin: 3px;
+}
+
+.button{
+
+    background-color: rgb(200, 16, 46);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;top: 45%; left: 20.7%; 
+    padding-left: 125px;
+    padding-right: 133px;
+}
+
+.Desc{
+    margin-left: 40px;
+    color: rgb(200, 16, 46);
+}
+
+._{
+    color: rgb(200, 16, 46);
 }

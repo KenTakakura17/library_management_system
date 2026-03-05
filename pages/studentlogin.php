@@ -1,3 +1,14 @@
+<?php
+if (isset($_GET['status']) && $_GET['status'] == "false") {
+    echo "<script> alert('User and Pass Incorrect') </script>";
+}
+
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,11 +25,15 @@
         <h2 class="library">Library Account</h2>
     </div>
     <div class="LoginFormContainer">
-        <form action="../php/studentlogin.php" method="POST" class="LoginForm">
-            <input type="text" name="username" placeholder="Username" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <button type="submit">Login</button>
+        <form action="functions/studentloginfunction.php" method="POST" class="LoginForm">
+            <input class="Username" type="text" name="username" placeholder="Username" required>
+            <input class="Password" type="password" name="password" placeholder="Password" required>
+            <button class="button" type="submit">Login</button>
+            <h1 class="_">_______________________________________</h1>
+            <h4 class="Desc">Dont Have an account? Sign Up</h4>
+            <a href="Createaccount.php">Create Account</a>
         </form>
+
     </div>
 
 </body>
