@@ -31,7 +31,7 @@ if (isset($_GET['status']) && $_GET['status'] == "false") {
             <button class="button" type="submit">Login</button>
             <h1 class="_">_______________________________________</h1>
             <h4 class="Desc">Dont Have an account? Sign Up</h4>
-            <a href="Createaccount.php">Create Account</a>
+            <a href="Createaccount.php" class="CA">Create Account</a>
         </form>
 
     </div>

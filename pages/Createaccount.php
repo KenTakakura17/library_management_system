@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<link rel="stylesheet" href="css/createaccount.css">
 <body>
     <div class="">
         <h1 class="createuser">Create User</h1>
-        <form action="" method="POST">
+        <form action="functions/studentloginfunction.php" method="POST">
             <label for="" class="usna">First Name</label>
             <input type="text" name="first_name" class="usnas" placeholder="First Name">
             <label for="" class="email">Last Name</label>

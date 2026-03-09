@@ -58,6 +58,7 @@
     padding: 5px;
     padding-right: 120px;
     margin: 3px;
+    stop-color: aquamarine;
 }
 
 .button{
@@ -74,6 +75,7 @@
     position: absolute;top: 45%; left: 20.7%; 
     padding-left: 125px;
     padding-right: 133px;
+    border-radius: 2px;
 }
 
 .Desc{
@@ -84,3 +86,17 @@
 ._{
     color: rgb(200, 16, 46);
 }
+
+.CA{
+    color: rgb(200, 16, 46);
+    position: absolute;
+    top: 75%;
+    left: 35%;
+    text-decoration: none;
+    background-color: rgb(200, 16, 46);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
