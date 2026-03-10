@@ -1,6 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-<link rel="stylesheet" href="css/createaccount.css">
+<link rel="stylesheet" href="../css/createaccount.css">
+
+<?php
+include "../resources/header.php";
+?>
+
 <body>
     <div class="">
         <h1 class="createuser">Create User</h1>
