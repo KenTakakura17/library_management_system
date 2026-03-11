@@ -1,6 +1,6 @@
 <?php
 if (isset($_GET['status']) && $_GET['status'] == "false") {
-    echo "<script> alert('User and Pass Incorrect') </script>";
+    echo "<script> alert('User or Password is Incorrect') </script>";
 }
 
 

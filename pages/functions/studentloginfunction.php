@@ -17,6 +17,14 @@ if (
     $password = $_POST['password'];
     $department = $_POST['department'];
     $id_number = $_POST['id_number'];
+    $cpassword = $_POST['confirm_password'];
+
+    
+    if ($password !== $cpassword) {
+    echo "<script> alert('Passwords do not match. Please try again.')</script>";
+    exit();
+}
+    
 
     $sql = "INSERT INTO student_account (first_name, last_name, username, password, department, id_number)
             VALUES (

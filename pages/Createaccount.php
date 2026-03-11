@@ -21,6 +21,7 @@ include "../resources/header.php";
             <input type="text" name="username" class="fnames" placeholder="Username">
             <label for="" class="password">Password</label>
             <input type="password" name="password" class="passwords" required placeholder="Password">
+            <label for="" class="cpassword">Confirm Password</label>
             <input type="password" name="confirm_password" placeholder="Confirm Password" class="passwords" required>
             <button type="submit" class="savebutton">Save</button>
         </form>
