@@ -9,8 +9,8 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
 
     $result = loginAuth($username, $Password);
 
-    if ($result == 1) {
-        echo "<script> window.location.href = '../dashboard.php'</script>";
+    if ($result === 1) {
+        echo "<script> window.location.href = '../Adminarea.php'</script>";
     } else {
         echo "<script> window.location.href = '../login.php?status=false'</script>";
     }

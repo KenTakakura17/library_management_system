@@ -20,7 +20,7 @@ include "../resources/header.php";
         <h2 class="library">Library Account</h2>
     </div>
     <div class="LoginFormContainer">
-        <form action="../functions/studentloginfunction.php" method="POST" class="LoginForm">
+        <form action="functions/studentloginfunction.php" method="POST" class="LoginForm">
             <input class="Username" type="text" name="username" placeholder="Username" required>
             <input class="Password" type="password" name="password" placeholder="Password" required>
             <button class="button" type="submit">Login</button>
