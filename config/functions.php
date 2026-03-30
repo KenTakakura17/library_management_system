@@ -1,19 +1,18 @@
 <?php
-function loginAuth($username, $password)
+function loginAuth($usernames, $passwords)
 {
     include "connection.php";
 
     $sql = "SELECT * FROM student_account WHERE username = :username AND password = :password ";
     $stmnt = $conn->prepare($sql);
     $stmnt -> execute([
-        "username" => $username,
-        "password" => $password
+        "username" => $usernames,
+        "password" => $passwords
 
     ]);
 
     $count = $stmnt -> rowCount();
 
     return $count;
-
 }
 ?>

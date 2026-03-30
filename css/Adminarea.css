@@ -1,0 +1,156 @@
+
+/* General styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, rgb(200,16,46), rgb(120,10,30), rgb(60,5,15));
+    background-size: 300% 300%;
+    animation: gradientBG 12s ease infinite;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+@keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+div.container {
+    background: rgba(255,255,255,0.97);
+    border-radius: 22px;
+    padding: 45px;
+    width: 100%;
+    max-width: 700px;
+    box-shadow: 0 25px 70px rgba(0,0,0,0.35);
+    border: 1px solid rgba(255,255,255,0.6);
+    backdrop-filter: blur(10px);
+}
+
+/* Headings */
+h1.createuser {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(200,16,46);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+h1.createuser::after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 4px;
+    background: linear-gradient(90deg, rgb(200,16,46), rgb(120,10,30));
+    margin: 12px auto 0;
+    border-radius: 4px;
+}
+
+/* Form inputs */
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+}
+
+input, select {
+    width: 100%;
+    padding: 14px 18px;
+    border: 2px solid #e4e4e4;
+    border-radius: 12px;
+    font-size: 14px;
+    background: #fafafa;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+input:focus, select:focus {
+    border-color: rgb(200,16,46);
+    background: white;
+    box-shadow: 0 0 0 5px rgba(200,16,46,0.15);
+    transform: translateY(-2px);
+}
+
+/* Buttons */
+button.savebutton {
+    padding: 16px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(90deg, rgb(200,16,46), rgb(120,10,30));
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+    box-shadow: 0 12px 35px rgba(200,16,46,0.45);
+    display: block;
+    margin: 15px auto; /* Center button */
+}
+
+button.savebutton:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 18px 45px rgba(200,16,46,0.6);
+}
+
+button.savebutton:active {
+    transform: scale(0.98);
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: rgba(200,16,46,0.1);
+    color: #111;
+}
+
+/* Center the Action buttons */
+table td:last-child {
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    form {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Center Go button in the grid form */
+form button.savebutton {
+    grid-column: span 2;  /* span both columns */
+    justify-self: center;  /* center horizontally */
+}
+
+/* Center Add Student button */
+button.savebutton {
+    display: block;
+    margin: 15px auto;
+}
+
+/* Center Action buttons in table */
+table td:last-child {
+    text-align: center;
+}
